@@ -225,3 +225,6 @@ Lag to repository secrets.
 curl -X POST $URL -H 'Content-Type: text/plain' -H 'cache-control: no-cache' -d 'The laptop would not boot up'
 ```
 
+## Bonusoppgave 
+
+* Du kan lage en applikasjon fra scratch ved å bruke "sam init" - forsøk gjerne å lage en ny sam app. Dt kan være lurt å velge Python eller Javascript som språk, siden disse er tolkede språk og ikke trenger  kompilering
