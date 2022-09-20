@@ -201,7 +201,9 @@ Lag to repository secrets.
 * AWS_SECRET_ACCESS_KEY
 
 * Du må gå til tjenesten IAM i AWS og fine din egen IAM bruker. 
-* Du må lage nye "credentials" for AWS brukeren for å få verdier du kan bruke i hemmelighetene. 
+* Velg "Security credentials" tabben
+* Velg "Create Access Key"
+* Ta vare på verdiene, last de gjerne ned som en fil
 
 ## Sjekk at pipeline virker
 
@@ -213,7 +215,8 @@ Lag to repository secrets.
 * Gjør kodeendringer på main branch i Lambdaen
 * Commit & push endringen
 * Se at endringene blir deployet av GitHub Actions workflow.
-* NB. Hvis du ikke gjør noen endring i koden, får du ikke en ny deployment av Lambda.
+* Hvis jobben har feilet tidligere på grunn av manglende secrets, og du har lagt de inn kan du velge din workflow, og så trykke knappen "re-run all jobs" i GitHub Actions UI.
+* 
 
 ![Alt text](img/finished.png  "a title")
 
