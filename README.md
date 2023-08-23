@@ -112,8 +112,8 @@ REPORT RequestId: d37e4849-b175-4fa6-aa4b-0031af6f41a0  Init Duration: 0.42 ms  
 * NB! Du må endre Stack name til noe unikt. Legg på ditt brukeranvn eller noe i slutten av navnet, for eksempel; ```--stack-name sam-sentiment-ola```
 
 ```shell
- sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-sentiment-<noe unikt, feks brukernavnet ditt i AWS kontoen> --s3-bucket lambda-deployments-gb --capabilities CAPABILITY_IAM --region us-east-1
-```
+  sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-sentiment-<dine initialer eller noe>  --s3-bucket lambda-bucket-grb  --capabilities CAPABILITY_IAM --region eu-west-1      
+ ```
 
 * Legg merke til at regionen er satt til us-east-1 (N.Virigina) vi jobber med Cloud9 i Irland, men deployer funksjonen vår til AWS Sin ifrastruktur i USA. Kult?! 
 
