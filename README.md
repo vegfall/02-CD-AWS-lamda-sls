@@ -227,6 +227,7 @@ Lag to repository secrets.
 
 * Test lambdafunksjonen med feks Curl (eller Postman om du har) 
 ```shell
+export URL=<Hvordan finner du URL? Det er flere måter.....>
 curl -X POST $URL -H 'Content-Type: text/plain' -H 'cache-control: no-cache' -d 'The laptop would not boot up'
 ```
 
