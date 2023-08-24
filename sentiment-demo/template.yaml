@@ -44,13 +44,6 @@ Resources:
               - Effect: Allow
                 Action: 'logs:*'
                 Resource: '*'
-        - PolicyName: root
-          PolicyDocument:
-            Version: "2012-10-17"
-            Statement:
-              - Effect: Allow
-                Action: 'comprehend:*'
-                Resource: '*'
 
 Outputs:
   SentimentAPI:

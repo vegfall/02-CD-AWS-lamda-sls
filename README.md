@@ -86,14 +86,18 @@ cd sentiment-demo/
 sam build --use-container
 ```
 
+## Finn en feil :-) 
+
+Jeg har med vilje ikke lagt på en policy for tjenesten comprehend i lambda funksjonen. Den kan bare bruke cloudwatch logs.
+Modifiser ```template.yml``` og legg til en Policy 
+
+## Test 
+
 Du kan teste funksjonen uten å deploye den til AWS ved å kjøre kommandoen 
 
 ```shell
 sam local invoke -e event.json 
 ```
-
-Så lenge feature flagget MOCK er satt til "true" vil sentiment-analysen alltid returnere et positivt sentiment. 
-AWS Comprehend tjenesten vil bli brukt, når MOCK feature flagget er slått av. 
 
 Event.json filen inneholder en request, nøyaktig slik API Gateway sender den til "handler" metoden/funksjonen. 
 
