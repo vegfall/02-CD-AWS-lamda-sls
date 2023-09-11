@@ -44,7 +44,13 @@ Resources:
               - Effect: Allow
                 Action: 'logs:*'
                 Resource: '*'
-
+        - PolicyName: comp
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: 'comprehend:*'
+                Resource: '*'
 Outputs:
   SentimentAPI:
     Description: "API Gateway endpoint URL for Prod stage for Sentiment function"
