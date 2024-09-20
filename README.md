@@ -103,11 +103,6 @@ cd sentiment-demo/
 sam build --use-container
 ```
 
-## Finn en feil :-) 
-
-Jeg har med vilje ikke lagt på en policy for tjenesten comprehend i lambda funksjonen. Den kan bare bruke cloudwatch logs.
-Modifiser ```template.yml``` og legg til en Policy 
-
 ## Test 
 
 Du kan teste funksjonen uten å deploye den til AWS ved å kjøre kommandoen 
