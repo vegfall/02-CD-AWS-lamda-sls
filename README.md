@@ -194,7 +194,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - run: sam build --use-container
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-sentiment-sam_and_glenn --s3-bucket lambda-deployments-gb --capabilities CAPABILITY_IAM --region us-east-1
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-sentiment-<studentid>  --s3-bucket lambda-bucket-grb  --capabilities CAPABILITY_IAM --region eu-west-1
 ```
 
 For å pushe endringen til ditt repo må du stå i riktig katalog i Cloud9 terminalen 
