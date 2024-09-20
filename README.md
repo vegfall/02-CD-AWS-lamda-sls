@@ -138,7 +138,7 @@ Når jobben er ferdig, vil du blant annet se hva URL'en til lambdafunksjonen ble
 ```text
 Key                 SentimentAPI                                                                
 Description         API Gateway endpoint URL for Prod stage for Sentiment function              
-Value               https://orpbuzoiik.execute-api.us-east-1.amazonaws.com/Prod/sentiment/      
+Value               https://orpbuzoiik.execute-api.us-west-1.amazonaws.com/Prod/sentiment/      
 ```
 
 Du kan deretter bruke postman eller Curl til å teste ut tjenesten. Erstat URL med URL'en til lambdafunksjonen. Dere finner denne
@@ -187,7 +187,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+          aws-region: us-west-1
       - run: sam build --use-container
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-sentiment-<studentid>  --s3-bucket lambda-bucket-grb  --capabilities CAPABILITY_IAM --region eu-west-1
 ```
